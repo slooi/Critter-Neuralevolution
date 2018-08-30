@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Critter Neuralevolution</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body><!-- background: rgb(198, 212, 202); -->
+		<div id="content">
+
+			<canvas></canvas>
+
+			<div id="extraInfo" style="margin-top:2px"><!-- width:auto;text-align:left"> -->
+				<div>Grid on: <input type="checkbox" id="gridCheckBox"  onclick="gridChange()"></div><!-- checked -->
+				<div>Critter Range on: <input type="checkbox" id="critRangeCheckBox" onclick="critRangeChange()"></div>
+				<div>Critter Stats on: <input type="checkbox" id="critStatsCheckBox" onclick="critStatsChange()"></div>
+				<div>Autospawn on: <input type="checkbox" id="autoSpawnCheckBox" onclick="autoSpawnChange()"></div>
+				<div>Print on: <input type="checkbox" id="printCheckBox" onclick="printChange()"></div>
+				
+				<br>
+				<div style="width:auto;">
+					<p>Food Count: <span id="foodCounterDisplay" style="float:right"></span></p>
+					<input type="range" min="1" max="100" id="foodCounterSlider" style="width:145px;"><!-- value="50" -->
+				</div>
+				<div style="width:auto;">
+					<p>Max Population: <span id="critMaxPopDisplay" style="float:right"></span></p>
+					<input type="range" min="1" max="500" id="critMaxPopSlider" style="width:145px;">
+				</div>
+
+				<div style="margin-top:10px">Population: <span id="critNumDisplay"></span></div>
+				
+				<button onclick="spawnCrittersButton()" style="margin-top:8px">Spawn Critters</button>
+
+
+				
+				<br>
+				<br>
+				<span id="coords"></span>
+			</div>
+
+		</div>
+
+	<script src="matrix.js"></script>
+	<script src="javascript.js"></script>
+
+
+	</body>
+</html>
+
+

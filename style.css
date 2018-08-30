@@ -1,0 +1,22 @@
+canvas{
+	border:0px solid grey;
+	/*display:inline-block;*/
+	/*margin-left: auto;*/
+	padding-left:auto;
+}
+body{
+	text-align: center;
+}
+#content{
+	/*background:yellow;*/
+}
+#extraInfo{
+	display:inline-block;
+	/*padding-right:auto;*/
+	vertical-align:top;
+	text-align:left;
+	/*background:red;*/
+}
+*{
+	margin:0;
+}
